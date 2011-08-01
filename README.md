@@ -10,6 +10,6 @@ Interesting Links
 
 *[AddClipboardFormatListener Win32 API Function](http://msdn.microsoft.com/en-us/library/ms649033\(v=VS.85\).aspx)
 
-*[RemoveClipboardFormatListener Function](http://msdn.microsoft.com/en-us/library/ms649050(v=VS.85).aspx)
+*[RemoveClipboardFormatListener Function](http://msdn.microsoft.com/en-us/library/ms649050\(v=VS.85\).aspx)
 
-*[WM_CLIPBOARDUPDATE Message Details](http://msdn.microsoft.com/en-us/library/ms649021(VS.85).aspx)
+*[WM_CLIPBOARDUPDATE Message Details](http://msdn.microsoft.com/en-us/library/ms649021\(VS.85\).aspx)
