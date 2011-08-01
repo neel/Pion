@@ -13,19 +13,20 @@ using System.Windows.Shapes;
 namespace Prototype_1
 {
 	/// <summary>
-	/// Interaction logic for MainWindow.xaml
+	/// Interaction logic for SettingsWindow.xaml
 	/// </summary>
-	public partial class MainWindow : Window
+	public partial class SettingsWindow : Window
 	{
-		public MainWindow()
+		public SettingsWindow()
 		{
 			this.InitializeComponent();
+			
+			// Insert code required on object creation below this point.
 		}
 
 		private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
 		{
-			SettingsWindow settings = new SettingsWindow();			
-			settings.ShowDialog();			
+			MessageBox.Show("Change path.");
 		}
 	}
 }

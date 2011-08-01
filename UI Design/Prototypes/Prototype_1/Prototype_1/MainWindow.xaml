@@ -73,9 +73,9 @@
 			</LinearGradientBrush>
 		</Grid.Background>
 		
-		<Ellipse HorizontalAlignment="Left" Margin="30,16,0,17.084" Stroke="#FF00585F" Width="82" StrokeThickness="5"/>
+		<Ellipse HorizontalAlignment="Left" Margin="30,20,0,22" Stroke="#FF00585F" Width="82" StrokeThickness="5"/>
 		<TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Margin="43,0,0,0" TextWrapping="Wrap" FontSize="32" Width="58" Foreground="#FF00585F"><Run Text="100"/></TextBlock>
 		<Button VerticalAlignment="Center" HorizontalAlignment="Left" Margin="139,0,0,0" FontSize="32" Style="{DynamicResource ButtonLinkStyle}" Content="My Favorite Video #1"/>
-		<Button Margin="0,0,8,0" FontSize="13.333" Foreground="#FF00585F" HorizontalAlignment="Right" Width="57" Height="25.96" VerticalAlignment="Bottom" Content="Settings" Style="{DynamicResource ButtonLinkStyle}"/>
+		<Button Margin="0,0,8,0" FontSize="13.333" Foreground="#FF00585F" HorizontalAlignment="Right" Width="57" Height="25.96" VerticalAlignment="Bottom" Content="Settings" Style="{DynamicResource ButtonLinkStyle}" Click="Button_Click"/>
 	</Grid>
 </Window>
