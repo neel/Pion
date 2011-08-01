@@ -8,7 +8,7 @@ Interesting Links
 
 *[Clipboard Monitor C# example](http://www.radsoftware.com.au/articles/clipboardmonitor.aspx)
 
-*[AddClipboardFormatListener Win32 API Function](http://msdn.microsoft.com/en-us/library/ms649033(v=VS.85).aspx)
+*[AddClipboardFormatListener Win32 API Function]("http://msdn.microsoft.com/en-us/library/ms649033(v=VS.85).aspx")
 
 *[RemoveClipboardFormatListener Function](http://msdn.microsoft.com/en-us/library/ms649050(v=VS.85).aspx)
 
