@@ -38,14 +38,7 @@
 									</VisualState>
 								</VisualStateGroup>
 							</VisualStateManager.VisualStateGroups>
-							<ScrollViewer x:Name="PART_ContentHost" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}">
-								<ScrollViewer.Background>
-									<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-										<GradientStop Color="White" Offset="0"/>
-										<GradientStop Color="#FFF3F1D0" Offset="1"/>
-									</LinearGradientBrush>
-								</ScrollViewer.Background>
-							</ScrollViewer>
+							<ScrollViewer x:Name="PART_ContentHost" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Background="White"/>
 						</Microsoft_Windows_Themes:ListBoxChrome>
 						<ControlTemplate.Triggers>
 							<Trigger Property="IsEnabled" Value="false">

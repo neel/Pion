@@ -12,7 +12,7 @@
 				<Grid.Background>
 			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
 				<GradientStop Color="White" Offset="0"/>
-				<GradientStop Color="#FFF0EDBB" Offset="1"/>
+				<GradientStop Color="#FFEFEED5" Offset="1"/>
 			</LinearGradientBrush>
 		</Grid.Background>
 		<TextBlock HorizontalAlignment="Left"  VerticalAlignment="Center" Margin="30,0,0,0" TextWrapping="Wrap" FontSize="26.667" Foreground="#FF00585F"><Run Language="de-ch" Text="Download Path"/></TextBlock>
