@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype_1", "Prototype_1\Prototype_1.csproj", "{b18a305f-5ff7-4fd2-b3ed-c7f39f777dc5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B18A305F-5FF7-4FD2-B3ED-C7F39F777DC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B18A305F-5FF7-4FD2-B3ED-C7F39F777DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B18A305F-5FF7-4FD2-B3ED-C7F39F777DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B18A305F-5FF7-4FD2-B3ED-C7F39F777DC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
