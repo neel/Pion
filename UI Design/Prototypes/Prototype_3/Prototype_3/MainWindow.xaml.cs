@@ -80,14 +80,14 @@ namespace Prototype_3
 
         void DownloadFileCompletedEventHandler(object sender, AsyncCompletedEventArgs e)
         {
-            Status.Text = string.Format("Done");
+            Status.Value = 60;
 
             ShowNewDownloadNotification(string.Format("{0} download completed. Click to open containing folder.", _currentDownloadFilename));
         }
 
         void DownloadProgressChangedEventHandler(object sender, DownloadProgressChangedEventArgs e)
         {
-            Status.Text = e.ProgressPercentage.ToString();
+            Status.Value = e.ProgressPercentage;
 
             _notifier.Text = e.ProgressPercentage.ToString();
         }
@@ -118,7 +118,7 @@ namespace Prototype_3
 
             youTubeDownloader.DownloadAsync(filepath);
 
-            Filename.Text = videoTitle;
+            Filename.Content = videoTitle;
 
             ShowNewDownloadNotification(string.Format("Downloading {0}", videoTitle));
         }
