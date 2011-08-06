@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Web;
+using System.Collections.Specialized;
 
 namespace Prototype_3
 {
@@ -46,9 +47,11 @@ namespace Prototype_3
 
                     string usableUrl = itagRegex.Replace(unescapedUrl, string.Empty);
 
+                    NameValueCollection ho = HttpUtility.ParseQueryString(usableUrl);
+
                     urls.Add(Uri.UnescapeDataString(usableUrl));
                 }
-                catch 
+                catch(StringMarkingNotFoundException)
                 { 
                     break; 
                 }

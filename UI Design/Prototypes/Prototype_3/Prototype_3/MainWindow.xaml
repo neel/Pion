@@ -9,13 +9,19 @@
         StateChanged="OnStateChanged"
         IsVisibleChanged="OnIsVisibleChanged">
     <Grid>
+    	<Grid.Background>
+    		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+    			<GradientStop Color="White" Offset="0"/>
+    			<GradientStop Color="#FFF1EFE1" Offset="1"/>
+    		</LinearGradientBrush>
+    	</Grid.Background>
         <Button x:Name="ShowSettings"
         	Content="Settings" 
         	Click="ShowSettings_Click" HorizontalAlignment="Right" Margin="0,0,21,24" VerticalAlignment="Bottom"/>
-        <TextBlock x:Name="Status"
-        	Text="None" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="48,61.436,0,0" FontSize="32" />
         <TextBlock x:Name="Filename"
-        	Text="None" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="170.47,61.436,0,0" FontSize="32" />
-        <Ellipse HorizontalAlignment="Left" Margin="31,34,0,38" Stroke="Black" Width="112" StrokeThickness="5"/>
+        	Text="None" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="170.47,61.436,0,0" FontSize="32" Foreground="#FF00585F" />
+        <Ellipse HorizontalAlignment="Left" Margin="31,34,0,38" Stroke="#FF00585F" Width="112" StrokeThickness="5"/>
+        <TextBlock x:Name="Status"
+        	Text="None" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="48,61.436,0,0" FontSize="32" Foreground="#FF00585F" />
     </Grid>
 </Window>

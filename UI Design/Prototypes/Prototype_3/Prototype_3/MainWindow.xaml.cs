@@ -88,6 +88,8 @@ namespace Prototype_3
         void DownloadProgressChangedEventHandler(object sender, DownloadProgressChangedEventArgs e)
         {
             Status.Text = e.ProgressPercentage.ToString();
+
+            _notifier.Text = e.ProgressPercentage.ToString();
         }
 
         void HandleClipboardUpdateMessage()
@@ -128,7 +130,10 @@ namespace Prototype_3
             _notifier.Icon = new System.Drawing.Icon(ICON_LOCATION);
             _notifier.Click += new EventHandler(m_notifyIcon_Click);
 
+ 
             _notifier.BalloonTipClicked += new EventHandler(_notifier_BalloonTipClicked);
+
+            ShowTrayIcon(true);
         }
 
         void _notifier_BalloonTipClicked(object sender, EventArgs e)
@@ -184,7 +189,6 @@ namespace Prototype_3
         }
         void OnIsVisibleChanged(object sender, DependencyPropertyChangedEventArgs args)
         {
-            CheckTrayIcon();
         }
 
         void m_notifyIcon_Click(object sender, EventArgs e)
@@ -192,10 +196,7 @@ namespace Prototype_3
             Visibility = System.Windows.Visibility.Visible;
             WindowState = _storedWindowState;
         }
-        void CheckTrayIcon()
-        {
-            ShowTrayIcon(!IsVisible);
-        }
+
 
         void ShowTrayIcon(bool show)
         {
