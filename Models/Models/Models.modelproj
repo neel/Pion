@@ -17,6 +17,13 @@
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
   <ItemGroup>
+    <Content Include="Download_Video.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Download_Video.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Download_Video.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="Static_Model.classdiagram">
       <SubType>Content</SubType>
     </Content>

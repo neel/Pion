@@ -39,7 +39,6 @@ namespace Prototype_3
 
             _notifier = new System.Windows.Forms.NotifyIcon();
 
-
             InitializeTrayIcon();
         }
 
@@ -187,6 +186,7 @@ namespace Prototype_3
                 _storedWindowState = WindowState;
             }
         }
+
         void OnIsVisibleChanged(object sender, DependencyPropertyChangedEventArgs args)
         {
         }
