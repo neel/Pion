@@ -17,19 +17,29 @@
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
   <ItemGroup>
-    <Content Include="Download_Video_Use_Case.md">
+    <Content Include="Use Cases\Choose_Download_Location_Use_Case.md">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Use_Case_Overview.usecasediagram">
+    <Content Include="Use Cases\Download_Video_Use_Case.md">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Use_Case_Overview.usecasediagram.layout">
+    <Content Include="Use Cases\Use_Case_Overview.usecasediagram">
       <SubType>Content</SubType>
-      <DependentUpon>Use_Case_Overview.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Use Cases\Use_Case_Overview.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Use Cases\Use_Case_Overview.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Use Cases\Use_Case_Template.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Use Cases\View_Download_Location_Use_Case.md">
+      <SubType>Content</SubType>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\Models.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="Use Cases" />
   </ItemGroup>
 </Project>
