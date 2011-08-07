@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="643f8763-2c3f-43a6-8b09-25ec65d7c33b" name="Static_Model" linkedPackageId="03bea9ef-062f-47cc-a280-7c466cf0bf63" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="d4205e45-c9c3-4442-8d59-8690fd3791f7">
+      <profileInstance Id="4daff73e-b065-4384-84cf-a4b63a475fd9" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8e43050d-18a1-463d-9e43-4e025903dd5c">
+      <profileInstance Id="24afe9e6-eedf-4504-b416-1e5e8dd931cd" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="616a331f-12b8-4107-a9a6-38eed80dc341" name="YouTube User" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8ec4cdfa-8a88-4b0f-a676-f2efe2858e6f" />
+        <targetEnds>
+          <association Id="9c20c4c5-708d-4a32-83ae-ab744809e497" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="views" isAbstract="false">
+            <classMoniker Id="fb4e4b36-6400-4c09-80b3-af568a787ac0" LastKnownName="YouTube Video" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="590be9f8-545b-4412-8f2e-e8b9d41e2808" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="184214bc-cc62-464c-819c-9fe3d8c789b9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4228ed1c-092e-4a49-a5d5-aa320ad53903" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="93a9958d-d3fb-483f-a767-abf32cbfe98e" name="Lower" value="0">
+                      <elementDefinition Id="a220f71d-e8ed-4755-86ad-2ae07773f8f8" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="1c099623-7e33-471e-9e3d-86dda2a51f19" name="Upper" value="*">
+                      <elementDefinition Id="2012d438-e9a9-4fdb-bfca-397af611ad79" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="420ba9e8-9f08-4054-a049-9ad184be30d8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bc4e6218-d1e0-45e7-80b4-d79324050294" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fb4e4b36-6400-4c09-80b3-af568a787ac0" name="YouTube Video" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="afb3882a-bb31-4767-bafd-12c064acf051" />
+        <targetEnds>
+          <association Id="9da34ba3-4fd1-4856-a740-37581cdbd696" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="is stored on" isAbstract="false">
+            <classMoniker Id="109faed1-95a0-460f-8362-5f9bf59a231b" LastKnownName="YouTube Server" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bf3efeed-2263-4574-b44a-4dae7bdb1cb2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="0cc6152a-bb16-46ca-be54-b0049c5d8604" name="Lower" value="1">
+                      <elementDefinition Id="0498726a-2e2f-4e80-8f0c-acbb7082fb11" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="98134856-da38-4a69-8c54-47e128d4dc4e" name="Upper" value="*">
+                      <elementDefinition Id="658b19a6-3ffd-4d38-9618-bfd7480d6479" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="845e6f45-b131-497a-a698-6ea93d07377f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5471b57b-6fd6-44a9-bc9f-81d137278300" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="da409651-4874-4a3b-9f21-d6b4dfde21a8" name="Lower" value="1">
+                      <elementDefinition Id="2cce6dce-7a27-4ef2-8d0a-4b7336375520" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="1395fdbe-5cd9-4b30-a599-86617cb4434f" name="Upper" value="*">
+                      <elementDefinition Id="937cd599-38d4-462f-be24-e5ad1a0dc1ee" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="98adeb1e-7a95-4616-8069-ff400f274d9a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="db7f8d7f-b554-4e2c-93e6-e1a57f6c98be" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="25dae03a-dca3-4648-a013-049da2c75261" name="Link" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1adfb15c-65bf-49c4-9b25-9ba50fb93891" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="941d8e17-7304-4d18-8ce7-523a70f5ab39" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="72acee5d-9fed-431a-90ad-c869de3d051b" name="Title" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ccc73913-3f44-4c59-afa3-30b2be950c28" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="941d8e17-7304-4d18-8ce7-523a70f5ab39" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="37288504-9bf2-4cea-bf8d-c5039390848e" name="SourceCode" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="01ab0c3d-f345-49be-a289-b575ba24e945" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="941d8e17-7304-4d18-8ce7-523a70f5ab39" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="109faed1-95a0-460f-8362-5f9bf59a231b" name="YouTube Server" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cc1e04b2-9cb9-46af-94c8-d0534df29086" />
+        <ownedAttributesInternal>
+          <property Id="98a56f97-3241-4c18-b4b5-2ad1e59fa141" name="Url" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a1caf925-cab9-40d3-afdc-fc10a2d7cc12" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="941d8e17-7304-4d18-8ce7-523a70f5ab39" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="eab22263-113b-4f48-a411-39b3471e4755" name="Parameters" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b5bf6901-f963-47b9-ad95-08b2eacdf45d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5c179889-dfd0-4071-ab2f-5f9cb599b3c8" LastKnownName="NameValueCollection" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="941d8e17-7304-4d18-8ce7-523a70f5ab39" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5c179889-dfd0-4071-ab2f-5f9cb599b3c8" name="NameValueCollection" isAbstract="false" isLeaf="false" cachedFullName="NameValueCollection">
+        <elementDefinition Id="178e090b-c73f-4021-927d-e55dde3f2085" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="03bea9ef-062f-47cc-a280-7c466cf0bf63" name="Models">
+    <elementDefinition Id="c6b3ae35-5803-4dd9-9475-c50b1b0a9f76" />
+  </package>
+</logicalClassDesignerModel>
