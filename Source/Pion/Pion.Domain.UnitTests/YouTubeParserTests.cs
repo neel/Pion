@@ -24,7 +24,7 @@ namespace Pion.Domain.UnitTests
             // Arrange
             string testVideoTitle = "TEST";
 
-            YouTubeParser parser = new YouTubeParser(testVideoTitle + "\">");
+            YouTubeParser parser = new YouTubeParser(testVideoTitle + YouTubeParser.VIDEO_END_TAG);
 
             // Act + Assert
             parser.ExtractTitle();
@@ -37,7 +37,7 @@ namespace Pion.Domain.UnitTests
             // Arrange
             string testVideoTitle = "TEST";
 
-            YouTubeParser parser = new YouTubeParser("<span id=\"eow-title\" class=\"\" dir=\"ltr\" title=\"" + testVideoTitle);
+            YouTubeParser parser = new YouTubeParser(YouTubeParser.VIDEO_START_TAG + testVideoTitle);
 
             // Act + Assert
             parser.ExtractTitle();
@@ -48,7 +48,7 @@ namespace Pion.Domain.UnitTests
         public void ExtractTitle_MissingVideoTitleInSource_ThrowsException()
         {
             // Arrange
-            YouTubeParser parser = new YouTubeParser("<span id=\"eow-title\" class=\"\" dir=\"ltr\" title=\"\">");
+            YouTubeParser parser = new YouTubeParser(YouTubeParser.VIDEO_START_TAG + YouTubeParser.VIDEO_END_TAG);
 
             // Act + Assert
             parser.ExtractTitle();
@@ -60,7 +60,7 @@ namespace Pion.Domain.UnitTests
             // Arrange
             string expectedVideoTitle = "TEST";
 
-            YouTubeParser parser = new YouTubeParser("<span id=\"eow-title\" class=\"\" dir=\"ltr\" title=\"" + expectedVideoTitle + "\">");
+            YouTubeParser parser = new YouTubeParser(YouTubeParser.VIDEO_START_TAG + expectedVideoTitle + YouTubeParser.VIDEO_END_TAG);
 
             // Act
             string actualVideoTitle = parser.ExtractTitle();

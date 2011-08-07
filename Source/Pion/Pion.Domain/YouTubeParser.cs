@@ -11,6 +11,9 @@ namespace Pion.Domain
 
         const int VALUE_NOT_FOUND = -1;
 
+        internal const string VIDEO_START_TAG = "<span id=\"eow-title\" class=\"\" dir=\"ltr\" title=\"";
+        internal const string VIDEO_END_TAG = "\">";
+
         public YouTubeParser(string htmlSource)
         {
             if (string.IsNullOrWhiteSpace(htmlSource))
@@ -23,10 +26,7 @@ namespace Pion.Domain
 
         public string ExtractTitle()
         {
-            string startTag = "<span id=\"eow-title\" class=\"\" dir=\"ltr\" title=\"";
-            string endTag = "\">";
-
-            string videoTitle = ExtractSlice(_htmlSource, startTag, endTag);
+            string videoTitle = ExtractSlice(_htmlSource, VIDEO_START_TAG, VIDEO_END_TAG);
 
             if (string.IsNullOrWhiteSpace(videoTitle))
             {
