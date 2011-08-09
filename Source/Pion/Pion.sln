@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pion.Infrastructure.Common"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pion.Domain.UnitTests", "Pion.Domain.UnitTests\Pion.Domain.UnitTests.csproj", "{43D57297-6A7D-4E4E-972E-FBA516376300}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pion.UI.Themes.Guanine", "Pion.UI.Themes.Guanine\Pion.UI.Themes.Guanine.csproj", "{2583C117-71A7-4CDF-B153-95D44C421A88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,16 @@ Global
 		{43D57297-6A7D-4E4E-972E-FBA516376300}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{43D57297-6A7D-4E4E-972E-FBA516376300}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{43D57297-6A7D-4E4E-972E-FBA516376300}.Release|x86.ActiveCfg = Release|Any CPU
+		{2583C117-71A7-4CDF-B153-95D44C421A88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2583C117-71A7-4CDF-B153-95D44C421A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2583C117-71A7-4CDF-B153-95D44C421A88}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2583C117-71A7-4CDF-B153-95D44C421A88}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2583C117-71A7-4CDF-B153-95D44C421A88}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2583C117-71A7-4CDF-B153-95D44C421A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2583C117-71A7-4CDF-B153-95D44C421A88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2583C117-71A7-4CDF-B153-95D44C421A88}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2583C117-71A7-4CDF-B153-95D44C421A88}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2583C117-71A7-4CDF-B153-95D44C421A88}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

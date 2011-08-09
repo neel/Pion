@@ -1,0 +1,149 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Colors.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <LinearGradientBrush x:Key="Gradient1"
+                         EndPoint="0.5,1"
+                         StartPoint="0.5,0">
+        <GradientStop Color="{DynamicResource Color2}"
+                      Offset="0" />
+        <GradientStop Color="{DynamicResource Color1}"
+                      Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="Gradient2"
+                         EndPoint="1,0"
+                         StartPoint="0,0">
+        <GradientStop Color="{DynamicResource Color3}"
+                      Offset="0" />
+        <GradientStop Color="{DynamicResource Color6}"
+                      Offset="0.5" />
+        <GradientStop Color="{DynamicResource Color3}"
+                      Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="Gradient3"
+                         EndPoint="0,1"
+                         StartPoint="0,0">
+        <GradientStop Color="{DynamicResource Color4}"
+                      Offset="0" />
+        <GradientStop Color="{DynamicResource Color5}"
+                      Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="Gradient4"
+                         EndPoint="0,1"
+                         StartPoint="0,0">
+        <GradientStop Color="{DynamicResource Color7}"
+                      Offset="0.5385" />
+        <GradientStop Color="{DynamicResource Color8}"
+                      Offset="0.5385" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="Gradient5"
+                         EndPoint="0,1"
+                         StartPoint="0,0">
+        <GradientStop Color="{DynamicResource Color9}"
+                      Offset="0.05" />
+        <GradientStop Color="{DynamicResource Color8}"
+                      Offset="0.25" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="Gradient6"
+                         EndPoint="1,0"
+                         StartPoint="0,0">
+        <GradientStop Color="{DynamicResource Color8}"
+                      Offset="0" />
+        <GradientStop Color="{DynamicResource Color10}"
+                      Offset="0.4" />
+        <GradientStop Color="{DynamicResource Color10}"
+                      Offset="0.6" />
+        <GradientStop Color="{DynamicResource Color8}"
+                      Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="Gradient7"
+                         EndPoint="1,0"
+                         StartPoint="0,0">
+        <GradientStop Color="{DynamicResource Color11}"
+                      Offset="0" />
+        <GradientStop Color="{DynamicResource Color12}"
+                      Offset="0.3" />
+        <GradientStop Color="{DynamicResource Color13}"
+                      Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="Gradient8"
+                         EndPoint="1,0"
+                         StartPoint="0,0">
+        <GradientStop Color="{DynamicResource Color13}"
+                      Offset="0" />
+        <GradientStop Color="{DynamicResource Color12}"
+                      Offset="0.7" />
+        <GradientStop Color="{DynamicResource Color11}"
+                      Offset="1" />
+    </LinearGradientBrush>
+
+    <RadialGradientBrush x:Key="Gradient9"
+                         RadiusY="1"
+                         RadiusX="1"
+                         RelativeTransform="1,0,0,1,0.5,0.5">
+        <GradientStop Color="{DynamicResource Color14}"
+                      Offset="0" />
+        <GradientStop Color="{DynamicResource Color15}"
+                      Offset="1" />
+    </RadialGradientBrush>
+
+    <LinearGradientBrush x:Key="Gradient10"
+                         EndPoint="0,0"
+                         StartPoint="0,1">
+        <GradientStop Color="{DynamicResource Color14}"
+                      Offset="0" />
+        <GradientStop Color="{DynamicResource Color15}"
+                      Offset="1" />
+    </LinearGradientBrush>
+
+    <RadialGradientBrush x:Key="Gradient11"
+                         RadiusY="1"
+                         RadiusX="1"
+                         RelativeTransform="1,0,0,1,-0.5,0.5">
+        <GradientStop Color="{DynamicResource Color14}"
+                      Offset="0" />
+        <GradientStop Color="{DynamicResource Color15}"
+                      Offset="1" />
+    </RadialGradientBrush>
+
+    <LinearGradientBrush x:Key="Gradient12"
+                         EndPoint="0,1"
+                         StartPoint="0,0">
+        <GradientStop Color="{DynamicResource Color16}"
+                      Offset="0.5385" />
+        <GradientStop Color="{DynamicResource Color8}"
+                      Offset="0.5385" />
+    </LinearGradientBrush>
+
+
+    <LinearGradientBrush x:Key="Gradient13"
+                         EndPoint="0,1"
+                         StartPoint="0,0">
+        <GradientStop Color="{DynamicResource Color18}"
+                      Offset="0" />
+        <GradientStop Color="{DynamicResource Color19}"
+                      Offset="0.5" />
+        <GradientStop Color="{DynamicResource Color20}"
+                      Offset="0.5" />
+        <GradientStop Color="{DynamicResource Color21}"
+                      Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="Gradient14" EndPoint="0.5,1"
+                         StartPoint="0.5,0">
+        <GradientStop Color="{DynamicResource Color27}"
+                      Offset="0" />
+        <GradientStop Color="{DynamicResource Color28}"
+                      Offset="1" />
+    </LinearGradientBrush>
+</ResourceDictionary>

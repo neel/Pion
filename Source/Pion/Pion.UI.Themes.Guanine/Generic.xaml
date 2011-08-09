@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Pion.UI.Themes.Guanine;component/NamedStyles/CircularProgressBar.xaml" />
+        <ResourceDictionary Source="/Pion.UI.Themes.Guanine;component/NamedStyles/HyperlinkButton.xaml" />
+        <ResourceDictionary Source="/Pion.UI.Themes.Guanine;component/Styles/Button.xaml" />
+        <ResourceDictionary Source="/Pion.UI.Themes.Guanine;component/Styles/Grid.xaml" />
+        <ResourceDictionary Source="/Pion.UI.Themes.Guanine;component/Styles/TextBlock.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    
+</ResourceDictionary>

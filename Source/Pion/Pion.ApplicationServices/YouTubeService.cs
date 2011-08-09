@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Pion.Domain;
 using System.IO;
+using System.Diagnostics;
 
 namespace Pion.ApplicationServices
 {
@@ -54,6 +55,11 @@ namespace Pion.ApplicationServices
             YouTubeParser parser = new YouTubeParser(htmlSource);
 
             return parser.ExtractTitle();
+        }
+
+        public void ShowDownloadLocation(string downloadDirectory)
+        {
+            Process.Start(downloadDirectory);
         }
 
         string CreateDestinationFilepath(string downloadDirectory, string videoTitle)

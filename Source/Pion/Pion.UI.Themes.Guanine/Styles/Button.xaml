@@ -1,0 +1,122 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="/Pion.UI.Themes.Guanine;component/Common/Colors.xaml"/>
+		<ResourceDictionary Source="/Pion.UI.Themes.Guanine;component/Common/Gradients.xaml"/>
+	</ResourceDictionary.MergedDictionaries>
+
+    <SolidColorBrush x:Key="ButtonNormalBorder"
+                     Color="{StaticResource Color22}" />
+
+    <SolidColorBrush x:Key="ButtonBorderBrush"
+                     Color="{StaticResource Color35}" />
+
+    <SolidColorBrush x:Key="ButtonForeground"
+                     Color="{StaticResource Color2}" />
+
+    <SolidColorBrush x:Key="ButtonForegroundOpacity"
+                     Color="{StaticResource Color2}" />
+
+
+    <Style x:Key="ButtonFocusVisual">
+        <Setter Property="Control.Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Rectangle Margin="2"
+                               SnapsToDevicePixels="true"
+                               Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"
+                               StrokeThickness="1"
+                               StrokeDashArray="1 2" />
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <ControlTemplate TargetType="{x:Type Button}"
+                     x:Key="ButtonTemplate">
+        <Border x:Name="border"
+                BorderBrush="{StaticResource ButtonBorderBrush}"
+                Background="{StaticResource Gradient14}"
+                BorderThickness="1">
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualStateGroup.Transitions>
+                        <VisualTransition GeneratedDuration="0:0:0.1" />
+                    </VisualStateGroup.Transitions>
+                    <VisualState x:Name="Normal" />
+                    <VisualState x:Name="MouseOver">
+                        <Storyboard>
+                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)"
+                                                          Storyboard.TargetName="border">
+                                <EasingColorKeyFrame KeyTime="0"
+                                                     Value="{StaticResource Color29}" />
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[0].(GradientStop.Color)"
+                                                          Storyboard.TargetName="border">
+                                <EasingColorKeyFrame KeyTime="0"
+                                                     Value="{StaticResource Color30}" />
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)"
+                                                          Storyboard.TargetName="border">
+                                <EasingColorKeyFrame KeyTime="0"
+                                                     Value="{StaticResource Color31}" />
+                            </ColorAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                    <VisualState x:Name="Pressed">
+                        <Storyboard>
+                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)"
+                                                          Storyboard.TargetName="border">
+                                <EasingColorKeyFrame KeyTime="0"
+                                                     Value="{StaticResource Color32}" />
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[0].(GradientStop.Color)"
+                                                          Storyboard.TargetName="border">
+                                <EasingColorKeyFrame KeyTime="0"
+                                                     Value="{StaticResource Color33}" />
+                            </ColorAnimationUsingKeyFrames>
+                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)"
+                                                          Storyboard.TargetName="border">
+                                <EasingColorKeyFrame KeyTime="0"
+                                                     Value="{StaticResource Color34}" />
+                            </ColorAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                    <VisualState x:Name="Disabled" />
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+
+
+            <TextBlock Text="{TemplateBinding Content}"
+                       HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                       Margin="{TemplateBinding Padding}"
+                       SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                       OpacityMask="{StaticResource ButtonForegroundOpacity}"
+                       Foreground="{StaticResource ButtonForeground}" />
+        </Border>
+    </ControlTemplate>
+
+    <Style TargetType="{x:Type Button}">
+        <Setter Property="FocusVisualStyle"
+                Value="{StaticResource ButtonFocusVisual}" />
+        <Setter Property="Background"
+                Value="{StaticResource Gradient13}" />
+        <Setter Property="BorderBrush"
+                Value="{StaticResource ButtonNormalBorder}" />
+        <Setter Property="BorderThickness"
+                Value="1" />
+        <Setter Property="Foreground"
+                Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" />
+        <Setter Property="HorizontalContentAlignment"
+                Value="Center" />
+        <Setter Property="VerticalContentAlignment"
+                Value="Center" />
+        <Setter Property="Padding"
+                Value="1" />
+        <Setter Property="Template"
+                Value="{DynamicResource ButtonTemplate}" />
+    </Style>
+
+</ResourceDictionary>
