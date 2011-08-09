@@ -5,6 +5,7 @@ using System.Text;
 using Pion.ApplicationServices;
 using System.ComponentModel;
 using Pion.Domain;
+using System.Windows.Input;
 
 namespace Pion.UI.ViewModels
 {
@@ -13,12 +14,15 @@ namespace Pion.UI.ViewModels
         int _currentProgressPercentage;
         string _currentVideoTitle;
         readonly IApplicationSettings _settings;
+        readonly Lazy<ICommand> _showDownloadLocation;
         readonly IYouTubeService _youTubeService;
 
         public MainWindowViewModel(IYouTubeService youTubeService, IApplicationSettings settings)
         {
             _settings = settings;
             _youTubeService = youTubeService;
+
+            _showDownloadLocation = new Lazy<ICommand>(() => new RelayCommand(obj => this.ShowDownloadLocation()));
 
             RegisterEventHandlers();
         }
@@ -60,6 +64,14 @@ namespace Pion.UI.ViewModels
                 _currentProgressPercentage = value;
 
                 RaisePropertyChanged("CurrentProgressPercentage");
+            }
+        }
+
+        public ICommand ShowDownloadLocationCommand
+        {
+            get
+            {
+                return _showDownloadLocation.Value;
             }
         }
 
@@ -105,6 +117,11 @@ namespace Pion.UI.ViewModels
         {
             _youTubeService.VideoDownloadCompleted -= VideoDownloadCompletedEventHandler;
             _youTubeService.VideoDownloadProgressChanged -= VideoDownloadProgressChangedCompleted;
+        }
+
+        void ShowDownloadLocation()
+        {
+            _youTubeService.ShowDownloadLocation(_settings.DownloadLocation);
         }
 
         void VideoDownloadProgressChangedCompleted(object sender, VideoDownloadProgressChanged e)

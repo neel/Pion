@@ -15,7 +15,14 @@ namespace Pion.UI
         {
             get
             {
-                return Properties.Settings.Default.DownloadLocation;
+                string downloadLocation = Properties.Settings.Default.DownloadLocation;
+
+                if (string.IsNullOrWhiteSpace(downloadLocation))
+                {
+                    return Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+                }
+
+                return downloadLocation;
             }
         }
 

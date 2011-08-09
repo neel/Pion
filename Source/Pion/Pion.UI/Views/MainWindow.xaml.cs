@@ -86,6 +86,15 @@ namespace Pion.UI.Views
             NativeMethods.RemoveClipboardFormatListener(GetCurrentWindowHandle());
         }
 
+        void ShowSettingsEventHandler(object sender, RoutedEventArgs e)
+        {
+            SettingsWindow settings = new SettingsWindow();
+
+            settings.DataContext = ServiceLocator.Resolve<SettingsViewModel>();
+
+            settings.ShowDialog();
+        }
+
         IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
         {
             switch (msg)

@@ -1,7 +1,7 @@
 ﻿<Window x:Class="Pion.UI.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow"
+        Title="Pion YouTube Downloader"
         Height="214"
         Width="768">
     <Grid>
@@ -12,14 +12,15 @@
         
         <Button x:Name="ShowSettings"
                 Style="{DynamicResource HyperlinkButtonStyle}"
+                Click="ShowSettingsEventHandler"
                 Content="Settings"
                 HorizontalAlignment="Right"
                 Margin="0,0,21,24"
                 VerticalAlignment="Bottom"
                 Grid.Column="1" />
-        
-        <Button x:Name="Filename"
-                Content="None"
+
+        <Button Content="{Binding Path=CurrentVideoTitle}"
+                Command="{Binding Path=ShowDownloadLocationCommand}"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Margin="10.47,61.436,0,0"
@@ -32,6 +33,7 @@
                      Minimum="0"
                      x:Name="Status"
                      Maximum="100"
+                     Value="{Binding CurrentProgressPercentage, Mode=OneWay}"
                      Foreground="{x:Null}"
                      HorizontalAlignment="Center"
                      VerticalAlignment="Center"

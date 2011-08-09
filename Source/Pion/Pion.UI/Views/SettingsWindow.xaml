@@ -1,0 +1,38 @@
+﻿<Window x:Class="Pion.UI.Views.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Pion Settings"
+        Height="190"
+        Width="728">
+    <Grid>
+        
+        <TextBlock Text="Download Path"
+                   HorizontalAlignment="Left"
+                   Margin="18,48,0,64"
+                   Width="222"
+                   FontSize="32" />
+        
+        <Button Command="{Binding Path=ChangeDownloadLocationCommand}"
+                Content="Change"
+                Width="125.013"
+                HorizontalAlignment="Right"
+                Margin="0,48,8,64"/>
+        
+        <TextBox Margin="255.99,49.357,152.068,64"
+                 Text="{Binding Path=CurrentDownloadLocation}"
+                 IsReadOnly="True"
+                 RenderTransformOrigin="0.5,0.5"
+                 VerticalContentAlignment="Center"
+                 FontSize="18.667">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform Angle="-0.394" />
+                    <TranslateTransform />
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        
+    </Grid>
+</Window>

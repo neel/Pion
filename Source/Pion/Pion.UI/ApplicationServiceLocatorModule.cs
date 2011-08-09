@@ -19,10 +19,12 @@ namespace Pion.UI
         public override void Load()
         {
             Bind<IApplicationSettings>().To<ApplicationSettings>().InSingletonScope();
+            Bind<IDialogService>().To<DialogService>().InSingletonScope();
             Bind<IVideoRepository>().To<VideoRepository>().InSingletonScope();
             Bind<IWebsiteRepository>().To<WebsiteRepository>().InSingletonScope();
             Bind<IYouTubeService>().To<YouTubeService>().InSingletonScope();
             Bind<MainWindowViewModel>().To<MainWindowViewModel>().InSingletonScope();
+            Bind<SettingsViewModel>().To<SettingsViewModel>().InSingletonScope();
         }
     }
 }

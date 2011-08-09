@@ -18,6 +18,8 @@ namespace Pion.ApplicationServices
         {
             _websiteRepository = websiteRepository;
             _videoRepository = videoRepository;
+
+            RegisterEventHandlers();
         }
 
         public bool IsDownloadInProgress
