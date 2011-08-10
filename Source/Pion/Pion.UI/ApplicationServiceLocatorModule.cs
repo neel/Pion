@@ -7,6 +7,7 @@ using Pion.ApplicationServices;
 using Pion.UI.ViewModels;
 using Pion.Domain;
 using Pion.Infrastructure.Internet;
+using Pion.UI.Views;
 
 namespace Pion.UI
 {
@@ -21,8 +22,8 @@ namespace Pion.UI
             Bind<IApplicationSettings>().To<ApplicationSettings>().InSingletonScope();
             Bind<IDialogService>().To<DialogService>().InSingletonScope();
             Bind<IVideoRepository>().To<VideoRepository>().InSingletonScope();
-            Bind<IWebsiteRepository>().To<WebsiteRepository>().InSingletonScope();
             Bind<IYouTubeService>().To<YouTubeService>().InSingletonScope();
+            Bind<IWebsiteRepository>().To<WebsiteRepository>().InSingletonScope();
             Bind<MainWindowViewModel>().To<MainWindowViewModel>().InSingletonScope();
             Bind<SettingsViewModel>().To<SettingsViewModel>().InSingletonScope();
         }

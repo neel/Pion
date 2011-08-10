@@ -1,6 +1,7 @@
 ﻿<Window x:Class="Pion.UI.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Icon="../Images/camera.png"
         Title="Pion YouTube Downloader"
         Height="214"
         Width="768">

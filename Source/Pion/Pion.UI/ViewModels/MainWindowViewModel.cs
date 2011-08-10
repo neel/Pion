@@ -92,9 +92,16 @@ namespace Pion.UI.ViewModels
                 return;
             }
 
+            ResetLastDownloadProgress();
+
             CurrentVideoTitle = _youTubeService.GetVideoTitle(url);
 
             _youTubeService.DownloadAsync(url, _settings.DownloadLocation);
+        }
+
+        public void ShowDownloadLocation()
+        {
+            _youTubeService.ShowDownloadLocation(_settings.DownloadLocation);
         }
 
         bool CheckIfYouTubeLink(string url)
@@ -119,9 +126,9 @@ namespace Pion.UI.ViewModels
             _youTubeService.VideoDownloadProgressChanged -= VideoDownloadProgressChangedCompleted;
         }
 
-        void ShowDownloadLocation()
+        void ResetLastDownloadProgress()
         {
-            _youTubeService.ShowDownloadLocation(_settings.DownloadLocation);
+            CurrentProgressPercentage = 0;
         }
 
         void VideoDownloadProgressChangedCompleted(object sender, VideoDownloadProgressChanged e)
