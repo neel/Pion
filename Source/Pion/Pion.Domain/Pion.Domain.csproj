@@ -50,6 +50,7 @@
     <Compile Include="StringMarker.cs" />
     <Compile Include="StringMarkingNotFoundException.cs" />
     <Compile Include="VideoDownloadProgressChanged.cs" />
+    <Compile Include="YouTubeLink.cs" />
     <Compile Include="YouTubeParser.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

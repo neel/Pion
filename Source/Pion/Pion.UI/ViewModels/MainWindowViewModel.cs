@@ -82,7 +82,7 @@ namespace Pion.UI.ViewModels
 
         public void Download(string url)
         {
-            if (!CheckIfYouTubeLink(url))
+            if (!_youTubeService.ValidateVideoLink(url))
             {
                 return;
             }
@@ -102,11 +102,6 @@ namespace Pion.UI.ViewModels
         public void ShowDownloadLocation()
         {
             _youTubeService.ShowDownloadLocation(_settings.DownloadLocation);
-        }
-
-        bool CheckIfYouTubeLink(string url)
-        {
-            return !string.IsNullOrWhiteSpace(url) && url.Contains("youtube.com");
         }
 
         void RaisePropertyChanged(string propertyName)

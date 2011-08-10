@@ -37,6 +37,7 @@ namespace Pion.ApplicationServices
 
         public void DownloadAsync(string videoUrl, string downloadDirectory)
         {
+
             TransitionToDownloadingState();
 
             string htmlSource = GetHtmlSource(videoUrl);
@@ -62,6 +63,13 @@ namespace Pion.ApplicationServices
         public void ShowDownloadLocation(string downloadDirectory)
         {
             Process.Start(downloadDirectory);
+        }
+
+        public bool ValidateVideoLink(string videoLink)
+        {
+            YouTubeLink link = new YouTubeLink(videoLink);
+
+            return link.IsValid;
         }
 
         string CreateDestinationFilepath(string downloadDirectory, string videoTitle)
