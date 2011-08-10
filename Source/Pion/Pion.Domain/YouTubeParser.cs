@@ -77,8 +77,6 @@ namespace Pion.Domain
 
                     string usableUrl = itagRegex.Replace(unescapedUrl, string.Empty);
 
-                    NameValueCollection ho = HttpUtility.ParseQueryString(usableUrl);
-
                     urls.Add(Uri.UnescapeDataString(usableUrl));
                 }
                 catch (StringMarkingNotFoundException)
