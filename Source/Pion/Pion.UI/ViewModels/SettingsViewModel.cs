@@ -43,7 +43,7 @@ namespace Pion.UI.ViewModels
 
         void ChangeDownloadLocation()
         {
-            string newDownloadLocation = _dialogService.ShowFolderBrowserDialog();
+            string newDownloadLocation = _dialogService.ChooseFolder();
 
             if (string.IsNullOrWhiteSpace(newDownloadLocation))
             {

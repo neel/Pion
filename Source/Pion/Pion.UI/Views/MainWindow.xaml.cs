@@ -3,9 +3,6 @@ using System.Windows;
 using System.Windows.Interop;
 using Pion.Infrastructure.Common;
 using Pion.UI.ViewModels;
-using System.Diagnostics;
-using System.Drawing;
-using System.Reflection;
 
 namespace Pion.UI.Views
 {
